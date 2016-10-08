@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <title>Title</title>
+</head>
+<body ng-app="store">
+    <div class="container-fluid">
+        <!--
+        <div class="row">
+            <div class="col-md-8">nnn</div>
+            <div class="col-md-4">mmm</div>
+        </div>
+        <table class="table table-hover">
+            <tr class="active">
+                <th>xuhao</th>
+                <th>neirong</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>this is contetnt</td>
+            </tr>
+        </table>
+        <form role="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email Address:</label>
+                <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword">Password:</label>
+                <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-levle</p>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+        -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1>as</h1>
+            </div>
+        </div>
+        <div class="row" ng-controller="NavController as naa">
+            <div class="col-md-2">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation" ng-class="{ active:naa.isSet(1) }">
+                        <a href="" ng-click="naa.setTab(1)">Home</a>
+                    </li>
+                    <li role="presentation" ng-class="{ active:naa.isSet(2) }">
+                        <a href="" ng-click="naa.setTab(2)">Profile</a>
+                    </li>
+                    <li role="presentation" ng-class="{ active:naa.isSet(3) }">
+                        <a href="" ng-click="naa.setTab(3)">Message</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10" ng-show="naa.isSet(2)">
+                <h2>functions</h2>
+                <div></div>
+                <h2>Information</h2>
+                <div>
+                    <table class="table table-hover">
+                        <tr class="active">
+                            <th>xuhao</th>
+                            <th>neirong</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>this is contetnt</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app2.js"></script>
+</body>
+</html>
